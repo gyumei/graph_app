@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeightGraphController;
 use App\Http\Controllers\WebPushController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,7 @@ use App\Http\Controllers\WebPushController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/calendar', [EventController::class, 'show'])->name("show"); 
 
 Route::get('/', function () {
     return view('welcome');
