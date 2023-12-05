@@ -4,4 +4,4 @@
  <meta charset="utf-8">
  <title>グラフ</title> 
  <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
+<p>こんにちは</p>
